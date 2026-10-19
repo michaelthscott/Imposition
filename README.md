@@ -75,8 +75,9 @@ Encrypted PDFs are supported only if they open without a password.
 
 You need Xcode on a Mac running macOS 26.3 or later.
 
-Open `Imposition.xcodeproj` in Xcode and build the **Imposition** scheme, or
-build from the command line:
+### From the command line
+
+Run this from the project folder to make a Release build:
 
 ```
 xcodebuild -project Imposition.xcodeproj -scheme Imposition \
@@ -84,12 +85,23 @@ xcodebuild -project Imposition.xcodeproj -scheme Imposition \
     -derivedDataPath build
 ```
 
-The tool is written to `build/Build/Products/Release/imposition`. To use it
-from anywhere, copy it into a folder on your `PATH`:
+The tool is written to `build/Build/Products/Release/imposition`, inside the
+project folder. To use it from anywhere, copy it into a folder on your `PATH`:
 
 ```
 sudo cp build/Build/Products/Release/imposition /usr/local/bin/
 ```
+
+### In Xcode
+
+Open `Imposition.xcodeproj` and choose the **Imposition** scheme.
+
+- **Product › Build** (⌘B) makes a Debug build in Xcode's DerivedData folder,
+  not in the project folder. Choose **Product › Show Build Folder in Finder**
+  and look in `Products/Debug/imposition`.
+- **Product › Archive** makes a Release build. In the Organizer, right-click
+  the archive, choose **Show in Finder**, then **Show Package Contents**. The
+  tool is at `Products/usr/local/bin/imposition`.
 
 ### Tests
 
