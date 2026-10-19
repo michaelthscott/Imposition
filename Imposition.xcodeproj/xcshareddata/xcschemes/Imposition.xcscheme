@@ -80,7 +80,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
-      customArchiveName = "signa"
+      customArchiveName = "imposition"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
