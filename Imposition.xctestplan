@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "80D8F507-CAEC-4C6D-9703-4E76EFA4ED76",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Imposition.xcodeproj",
+      "identifier" : "000000000000000100000000",
+      "name" : "Imposition"
+    },
+    "testInteropMode" : "complete"
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Imposition.xcodeproj",
+        "identifier" : "DA97F0723086244400680F51",
+        "name" : "ImpositionTests"
+      }
+    }
+  ],
+  "version" : 1
+}
