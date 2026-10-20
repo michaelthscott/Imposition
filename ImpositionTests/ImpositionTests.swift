@@ -82,7 +82,7 @@ struct PDFOutputTests {
 
     @Test func writesDoubleWidthSpreads() throws {
         let input = try makePDF(pages: 40, size: CGSize(width: 420, height: 595))
-        let output = input.deletingPathExtension().appendingPathExtension("booklet.pdf")
+        let output = input.deletingPathExtension().appendingPathExtension("imposition.pdf")
         defer {
             try? FileManager.default.removeItem(at: input)
             try? FileManager.default.removeItem(at: output)

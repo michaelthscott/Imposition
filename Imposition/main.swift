@@ -5,7 +5,7 @@ import Foundation
 // printing flipped on the short edge.
 
 let toolName = "imposition"
-let toolVersion = "1.0.0"
+let toolVersion = "1.1.0"
 let arguments = Array(CommandLine.arguments.dropFirst())
 
 if arguments == ["--version"] {
@@ -24,10 +24,10 @@ let outputURL: URL
 if arguments.count == 2 {
     outputURL = URL(fileURLWithPath: arguments[1])
 } else {
-    // Default: "<input>-booklet.pdf" alongside the input.
+    // Default: "<input>-imposition.pdf" alongside the input.
     let baseName = inputURL.deletingPathExtension().lastPathComponent
     outputURL = inputURL.deletingLastPathComponent()
-        .appendingPathComponent("\(baseName)-booklet.pdf")
+        .appendingPathComponent("\(baseName)-imposition.pdf")
 }
 
 do {

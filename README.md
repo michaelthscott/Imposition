@@ -49,7 +49,7 @@ imposition <input.pdf> [output.pdf]
 imposition --version
 ```
 
-If you don't give an output path, the tool writes `<input>-booklet.pdf` next
+If you don't give an output path, the tool writes `<input>-imposition.pdf` next
 to the input file:
 
 ```
@@ -58,7 +58,7 @@ Input pages:  70
 Padded pages: 96 (26 blank)
 Signatures:   3 of 8 folios
 Output pages: 48
-Wrote /Users/me/Documents/novel-booklet.pdf
+Wrote /Users/me/Documents/novel-imposition.pdf
 ```
 
 ### Printing
